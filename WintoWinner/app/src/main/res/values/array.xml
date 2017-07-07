@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="cbox_standards">
+        <item>ISO 9001:2015</item>
+        <item>ISO 9001:2008</item>
+        <item>ISO 14000</item>
+        <item>FSSC 22k</item>
+        <item>SQF</item>
+    </string-array>
+
+    <string-array name="cbox_saleperson">
+        <item>Sandra</item>
+        <item>Martha</item>
+        <item>Isamar</item>
+        <item>Karla</item>
+        <item>Robert</item>
+    </string-array>
+
+    <string-array name="cbox_numeric">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="cbox_years">
+        <item>1 Year</item>
+        <item>2 Year</item>
+        <item>3 Year</item>
+        <item>4 Year</item>
+        <item>5 Year</item>
+        <item>6 Year</item>
+    </string-array>
+
+    <string-array name="cbox_type_event">
+        <item>PreAuditoria</item>
+        <item>Etapa I</item>
+        <item>Etapa II</item>
+        <item>Seguimiento I</item>
+        <item>Seguimiento II</item>
+    </string-array>
+</resources>

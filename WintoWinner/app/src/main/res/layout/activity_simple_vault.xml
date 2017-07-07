@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/mpsdk_view_refresh_layout"/>
+    <include layout="@layout/mpsdk_view_progress_bar"/>
+
+    <ScrollView
+        android:id="@+id/regularLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mpsdk_white_background"
+                android:layout_margin="@dimen/mpsdk_card_margin"
+                card_view:cardCornerRadius="@dimen/mpsdk_card_corner_radius">
+
+                <LinearLayout
+                    android:id="@+id/customerMethodLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?android:attr/listPreferredItemHeight"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@color/mpsdk_white"
+                    android:clickable="true"
+                    android:onClick="onCustomerMethodsClick">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        tools:src="@drawable/ic_email"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/pmImage"
+                        android:maxWidth="40dp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <com.mercadopago.customviews.MPTextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/customerMethodLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        tools:text="Visa"
+                        android:drawablePadding="10dp"
+                        style="@style/mpsdk_list_label"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/securityCodeCard"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mpsdk_white_background"
+                android:layout_margin="@dimen/mpsdk_card_margin"
+                card_view:cardCornerRadius="@dimen/mpsdk_card_corner_radius">
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/mpsdk_margin_std">
+
+                    <com.mercadopago.customviews.MPTextView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/text_cod_seg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mpsdk_security_code"
+                        style="@style/mpsdk_form_label" />
+                    <com.mercadopago.customviews.MPEditText
+                        android:id="@+id/securityCode"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_cod_seg"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:imeOptions="actionGo"
+                        android:layout_marginTop="@dimen/mpsdk_margin_std"
+                        style="@style/mpsdk_form_input" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/mpsdk_margin_std">
+
+                        <ImageView
+                            android:id="@+id/cVVImage"
+                            android:layout_width="115dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="10dp"
+                            tools:src="@drawable/mpsdk_ico_card_visa" />
+
+                        <com.mercadopago.customviews.MPTextView
+                            android:id="@+id/cVVDescriptor"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            tools:text="@string/mpsdk_cod_seg_desc"
+                            style="@style/mpsdk_help_text" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <com.mercadopago.customviews.MPButton
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mpsdk_button_height"
+                android:text="@string/mpsdk_confirm"
+                android:enabled="false"
+                android:layout_margin="@dimen/mpsdk_margin_std"
+                android:onClick="submitForm"
+                style="@style/mpsdk_button_normal"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

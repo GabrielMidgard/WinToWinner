@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group  android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@mipmap/ic_match"
+            android:title="@string/menu_matches" />
+
+        <item
+            android:id="@+id/nav_notices"
+            android:icon="@mipmap/ic_notice"
+            android:title="@string/menu_news" />
+
+        <item
+            android:id="@+id/nav_awards"
+            android:icon="@mipmap/ic_store"
+            android:title="@string/menu_store" />
+        
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/ic_profile_circle"
+            android:title="@string/menu_profile" />
+
+        <item
+            android:id="@+id/nav_my_bets"
+            android:icon="@mipmap/ic_my_bets"
+            android:title="@string/menu_my_bets" />
+
+        <item
+            android:id="@+id/menu_coins"
+            android:icon="@mipmap/ic_my_bets"
+            android:title="@string/menu_coins" />
+
+    </group>
+
+    <item   android:id="@+id/grp2" android:title="Configuración">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_preferences"
+                    android:icon="@mipmap/ic_preferences"
+                    android:title="@string/menu_preferences" />
+
+                <item
+                    android:id="@+id/nav_my_match"
+                    android:icon="@mipmap/ic_my_match"
+                    android:title="@string/menu_my_match" />
+            </group>
+        </menu>
+    </item>
+
+    <group  android:id="@+id/grp3" android:checkableBehavior="single">
+        <!--
+        <item
+            android:id="@+id/nav_wintowin"
+            android:icon="@mipmap/ic_wintowin_intence"
+            android:title="@string/menu_wintowin_intense" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@mipmap/ic_settings"
+            android:title="@string/menu_settings" />
+-->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_power"
+            android:title="@string/menu_logout" />
+    </group>
+
+
+</menu>

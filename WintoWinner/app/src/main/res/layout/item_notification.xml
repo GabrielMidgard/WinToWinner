@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/md_white_1000"
+        android:background="@color/md_white_1000"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp">
+
+
+        <!-- add Movimiento de balance-->
+        <RelativeLayout
+            android:id="@+id/notificationMovement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+                    <TextView
+                        android:id="@+id/txtTypeMoviment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TypeMoviment"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/txtCoins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="1000"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_moneda"
+                            android:layout_alignTop="@+id/linearLayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <!-- participante en rifa-->
+        <RelativeLayout
+            android:id="@+id/notificationParticipantRaffle"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- congratulations -->
+                <TextView
+                    android:id="@+id/lblCongratulations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/congratulations"
+                    android:textColor="@color/wintowin"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/r"
+                    android:layout_toEndOf="@+id/r"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <!-- Price Image -->
+                    <RelativeLayout
+                        android:id="@+id/price"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="@color/md_white_1000"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/thumbnailPrice"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:foregroundGravity="center_vertical|center_horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"  />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/price"
+                        android:layout_toEndOf="@+id/price">
+
+                        <TextView
+                            android:id="@+id/txtPriceName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price Name"
+                            android:textColor="@color/wintowin_dark"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/r"
+                            android:layout_toEndOf="@+id/r"
+                            android:textSize="20dp"
+                            android:gravity="center_horizontal" />
+
+                        <!-- Descripcion Terms Raffle  Participant / Winner-->
+                        <TextView
+                            android:id="@+id/txtDescripcionTermsRaffle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/descripcionTermsRaffle_parcipant"
+                            android:textSize="16dp"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

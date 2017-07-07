@@ -1,0 +1,286 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.app.chasebank"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <!-- header -->
+    <TableLayout
+        android:id="@+id/m_table_menu1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="0dp"
+        android:background="#000000"
+        android:stretchColumns="*">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:background="@color/wintowin"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_dialog_login"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/md_text_white"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_close"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+    </TableLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageSplash"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/logo"
+                        android:layout_marginTop="60dp"
+                        android:layout_alignParentTop="true" />
+
+                    <!-- Email -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/txtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@mipmap/ic_mail"
+                                android:drawableStart="@mipmap/ic_mail"
+                                android:drawablePadding="4dp"
+                                android:gravity="center_vertical"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <!-- Password -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/psw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="true">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/txtPsw"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@mipmap/ic_lock_open"
+                                android:drawableStart="@mipmap/ic_lock_open"
+                                android:drawablePadding="4dp"
+                                android:gravity="center_vertical"
+                                android:hint="@string/password"
+                                android:inputType="textPassword"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/footer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Login -->
+                            <RelativeLayout
+
+                                android:id="@+id/btnLogin"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:background="@drawable/ripple_button">
+
+                                <TextView
+                                    android:id="@+id/lblLogin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="@string/log_in"
+                                    android:textColor="@color/md_white_1000"
+                                    android:textSize="20sp"
+                                    android:gravity="center_horizontal"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_margin="5dp" />
+
+                            </RelativeLayout>
+
+                            <!-- Crear Cuenta -->
+                            <RelativeLayout
+
+                                android:id="@+id/btnNewAccount"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:background="@drawable/ripple_button"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:id="@+id/lblNewAccount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="@string/create_account"
+                                    android:textColor="@color/md_white_1000"
+                                    android:textSize="20dp"
+                                    android:gravity="center_horizontal"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_margin="5dp" />
+
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/lblForgotPsw"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="@string/forgot_psw"
+                                android:textColor="@color/md_gray_global_50"
+                                android:textSize="14dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true" />
+
+
+                            <!-- OR -->
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <View
+                                    android:layout_width="30dp"
+                                    android:layout_height="1dp"
+                                    android:layout_weight="3"
+                                    android:background="@android:color/black"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp" />
+
+                                <TextView
+                                    android:layout_weight="3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/or"
+                                    android:gravity="center_vertical|center_horizontal" />
+                                <View
+                                    android:layout_weight="3"
+                                    android:layout_width="30dp"
+                                    android:layout_height="1dp"
+                                    android:background="@android:color/black"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp" />
+                            </LinearLayout>
+
+                            <!-- Sign in with social networks -->
+                            <TextView android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sign_social_networks"
+                                android:gravity="center_horizontal"/>
+
+                            <!-- Facebook -->
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+
+                                <com.facebook.login.widget.LoginButton
+                                    android:id="@+id/btnLoginFacebook"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:paddingBottom="10dp"
+                                    android:paddingTop="10dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <TableLayout
+        android:id="@+id/m_table_menu"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="0dp"
+        android:background="#000000"
+        android:stretchColumns="*"></TableLayout>
+
+</RelativeLayout>

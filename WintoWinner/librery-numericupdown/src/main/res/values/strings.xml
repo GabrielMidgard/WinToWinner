@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Numeric Up Down</string>
+
+    <string name="add">+</string>
+    <string name="remove">-</string>
+    <string name="change_quantity">Cambio Cantidad</string>
+    <string name="change">Cambiar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add_more">Añadir</string>
+    <string name="remove_one">Remover</string>
+    <string name="price">Precio</string>
+    <string name="limit_reached">Límite alcanzado</string>
+    <string name="quantity">Cantidad</string>
+
+</resources>

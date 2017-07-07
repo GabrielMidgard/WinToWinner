@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/md_white_1000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- header -->
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:background="@color/wintowin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_betting"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/md_white_1000"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_close"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:onClick="back"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:id="@+id/bettingSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/colStock"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btnLocal"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:orientation="vertical"
+                        android:background="@color/md_gray_bg_stadistics"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp">
+
+                            <com.android.volley.toolbox.NetworkImageView
+                                android:id="@+id/thumbnailTeamLocal"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@mipmap/ic_launcher"
+                                android:layout_gravity="center"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btndraw"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:orientation="vertical"
+                        android:background="@color/md_gray_bg_stadistics"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/lblDraw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Empate"
+                            android:textColor="@color/md_black_1000"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="20dp"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/btnVisit"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:orientation="vertical"
+                        android:background="@color/md_gray_bg_stadistics"
+                        android:layout_weight="1">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/thumbnailTeamVisit"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/bettingSelected"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:id="@+id/linearLayout"
+                    android:gravity="right">
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="MX$"
+
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold" />-->
+
+                    <midgardsystems.lib.numericUpDown.NumericUpDown
+                        android:id="@+id/quantityView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:quantity="50"
+                        app:bid="50"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/bid"
+                        android:layout_toEndOf="@+id/bid"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_moneda"
+                        android:layout_alignTop="@+id/linearLayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bidSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bid"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:id="@+id/bid_50"
+                        style="@style/Midgard.CompoundButton.Bid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:text="$50" />
+
+                    <RadioButton
+                        android:id="@+id/bid_100"
+                        style="@style/Midgard.CompoundButton.Bid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:text="$100" />
+
+                    <RadioButton
+                        android:id="@+id/bid_200"
+                        style="@style/Midgard.CompoundButton.Bid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:text="$200" />
+
+                    <RadioButton
+                        android:id="@+id/bid_500"
+                        style="@style/Midgard.CompoundButton.Bid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:text="$500" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/bidSelected"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:gravity="right">
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="MX$"
+
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:id="@+id/lblMyCoins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/my_coins"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCoins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="1000"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="20dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_moneda"
+                        android:layout_alignTop="@+id/linearLayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnAdd"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button_black">
+
+            <TextView
+                android:id="@+id/lblAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/add_betting"
+                android:textColor="@color/md_white_1000"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

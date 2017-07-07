@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="DEVELOPER_KEY">AIzaSyC8Ur9lOafie0eFBVyQ_O5-yi2xauH2G9E>This is where you should put your API key, you can get one from https://developers.google.com/youtube/v3/getting-started</string>-->
+    <string name="DEVELOPER_KEY_VIRTUAL">AIzaSyCMk7hgU3Uemivp2V4mbzr-w5kO1X1tEMo</string><!-- Vistual-->
+    <string name="DEVELOPER_KEY">AIzaSyC8Ur9lOafie0eFBVyQ_O5-yi2xauH2G9E</string><!-- Vistual-->
+
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">544870032567719</string>
+    <string name="fb_login_protocol_scheme">fb544870032567719</string>
+
+    <!-- PalPay -->
+    <!--<string name="ID_CLIENT">AVf39-zCU9ZqalPIu55zEKJoA0C56_hCeXs9BBh21SiDGryjHH5jnlEQ7hZcf4Y4QaASaQW-Ko-qrdpl</string>EVazquez-->
+    <string name="ID_CLIENT">AWt_sVsqB_8q0HrC69i4y9o98gkNaaeA6eH68nfeS3u8OJY_-l1ROgd0RneQneUq8hcIaCnTsBRr06Fu</string>
+    <string name="ID_SANDBOX">APP-80W284485P519543T</string>
+    <string name="ID_LIVE_APP">APP-7M255259Y03303525</string>
+
+</resources>

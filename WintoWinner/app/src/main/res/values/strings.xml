@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">Win To Winner</string>
+    <string name="leagues">Ligas</string>
+
+    <!-- Social -->
+    <string name="cancel_login">Se canceló la operación</string>
+    <string name="error_login">Ocurrió un error al ingresar</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Bienvenidos</string>
+    <string name="matches">Partidos</string>
+    <string name="title_activity_final_vault">Pagar</string>
+    <!-- Fragment Login -->
+    <string name="login">Login</string>
+    <string name="password">Contraseña</string>
+    <string name="log_in">Iniciar sesión</string>
+    <string name="new_account">Crear nueva cuenta</string>
+    <string name="invalidad_email">Verique su cuenta de email</string>
+    <string name="invalidad_psw">Cerrar sesión</string>
+    <string name="enter_psw">ingrese su contraseña</string>
+
+    <string name="loginRegister">Registrarse</string>
+    <string name="loginInvited">Entrar como invitado</string>
+    <string name="btn_log_facebook">INICIA SESIÓN CON FACEBOOK</string>
+    <string name="or">Ó</string>
+    <string name="sign_social_networks">Inicie sesión con redes sociales</string><!--Sign in with social networks-->
+    <string name="dont_account">¿No tiene una cuenta? Regístrese ahora!</string><!--  Don't have an account? Sign up Now! -->
+    <string name="forgot_psw">¿Se te olvidó ty contraseña?</string><!-- FORGOT PASSWORD?-->
+    <string name="terms_conditions">Al crear su cuenta, usted acepta los Términos y condiciones de Win to Winner</string>
+
+    <string name="create_account">Crear cuenta</string>
+    <string name="session_code">Código de sesión</string>
+    <string name="MSN_EMAIL_IS_ALREADY">Este email ya está registrado en el sistema</string>
+    <string name="SUCCESSFULLY_REGISTERED">Registrado exitosamente. ¡Bienvenido!</string>
+    <string name="MSN_SUCCESSFULLY_LOGIN">Ingreso de usuario con éxito. ¡Bienvenido!</string>
+    <string name="MSN_EMAIL_NOT_REGISTERED">Este correo electrónico no ha sido registrado</string>
+    <string name="MSN_PSW_NOT_MATCH">Password no coincide con la cuenta de email</string>
+    <string name="MSN_CODE_NOT_VALID">El código que ha usado no existe o ya no es válido</string>
+    <string name="MISSING_CODE">Este usuario con que le desea ingresar necesita el código de acceso</string>
+    <string name="PROBLEM_WITH_LOGIN">Verifique su cuenta de email o su contraseña</string>
+
+    <string name="profil">Perfil</string>
+    <!-- Register -->
+    <string name="title_register">CREA TU CUENTA</string>
+    <string name="name">Nombre</string>
+    <string name="lastnames">Apellidos</string>
+    <string name="town">Ciudad</string>
+    <string name="show_password">Mostrar Contraseña Password</string>
+    <string name="check_terms_one">He leído y estoy de acuerdo con</string>
+    <string name="check_terms_two">Win to Win Términos de Servicio</string>
+    <string name="register">Crear Cuenta</string>
+    <string name="enter_name">ingrese su Nombre</string>
+    <string name="enter_lastName">ingrese sus Apellidos</string>
+    <string name="enter_companyName">ingrese su el nombre de su empresa</string>
+
+    <!-- Preferencias -->
+    <string name="title_preferences">Prefedencias</string>
+
+    <string name="title_dialog_login">Ingresar</string>
+
+
+    <string name="total_amount">Total importe apostado</string>
+    <string name="gain_possible">Ganancia posible</string>
+    <string name="change_quantity">Cambio Cantidad</string>
+
+
+    <string name="alert">Alerta</string>
+    <string name="message_ConfirmAcceptBets">Esta aceptando esta apuesta \n¿Desea continuarla?</string>
+    <string name="message_ConfirmBets">¿Esta seguro que desea lanzar esta apuesta?</string>
+    <string name="message_ConfirmAcceptAward">¿Está seguro que desea intercambiar sus coins por este premio?</string>
+
+
+    <string name="label_owner">owner</string>
+    <string name="valid_thru">valid thru</string>
+
+
+    <string name="new_betting">Lanzar nueva Apuesta</string>
+    <string name="select">Seleccionar</string>
+    <string name="add_betting">Añadir apuesta</string>
+    <string name="cleaner">Borrar</string>
+    <string name="draw">Empate</string>
+
+    <string name="coin_sales">Compar Monedas</string>
+    <string name="sales">Compar</string>
+
+    <string name="acepted_terms">Necesita acepter los terminos y condiciones para crear su cuenta</string>
+    <string name="my_coins">Mis monedas:</string>
+    <string name="bet_coins_for">Apuesta por:</string>
+    <string name="no_coins_betting">no cuentas con los suficientes coins para lanzar esta apuesta</string>
+    <string name="create_betting">Listo, tu apuesta ha sido creada</string>
+
+    <!-- Menu -->
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="menu_login">Iniciar sesión</string>
+    <string name="menu_news">Noticias</string>
+    <string name="menu_matches">Partidos</string>
+    <string name="menu_meetings">Encuentros</string>
+    <string name="menu_preferences">Prefedencias</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_my_bets">Mis apuestas</string>
+    <string name="menu_my_interests">Mis intereses</string>
+    <string name="menu_my_match">Mis Partidos</string>
+    <string name="menu_awards">Premios</string>
+    <string name="menu_store">Tienda</string>
+    <string name="menu_coins">Monedas</string>
+    <string name="menu_wintowin_intense">Win To Win Intense</string>
+    <string name="menu_settings">Configuraciónes</string>
+
+    <!-- void List -->
+    <string name="void_my_interests">No se encuentran encuentros disponibles, por el momento</string>
+    <string name="void_meetings">No se encuentran encuentros disponibles, por el momento</string>
+    <string name="void_new">No se encuentran noticias disponibles, por el momento</string>
+
+
+<string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
+
+    <!-- Alerts -->
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirmation_alert">Alerta de Confirmación</string>
+    <string name="message_evaluation">¿Se encuentra seguro con finalizar su auto-evaluación?\n Si acepta se mostrará su resultado y ya no podrá editarse.</string>
+    <string name="message_historical">En este momento se encuentra una evaluación pendiente\n¿Desea continuarla o iniciar una nueva?</string>
+    <string name="message_exit">¿Desea salir de la aplicación?</string>
+    <string name="message_logout">¿Desea cerrar sesión?</string>
+
+    <string name="accept">Aceptar</string>
+    <string name="yes">Si</string>
+    <string name="continues">Continuar</string>
+    <string name="create_new">Crear nueva</string>
+
+    <string name="notifications">Notificaciones</string>
+    <string name="close">Cerrar</string>
+    <string name="congratulations">Felicitaciones</string>
+
+
+    <string name="menssage_bet_accepted">La apuesta ha sido aceptada</string>
+    <string name="descripcionTermsRaffle_parcipant">Has sido elegido para formar para de una rifa por este premio, el sorteo se llevara acabo  20/08/2016 a las 20:00 hrs</string>
+    <string name="descripcionTermsRaffle_winner">Has sido el ganador de la rifa de este premio, contactanos mediante nuestras redes sociales o llamanos al numero para hacerle saber como puede recibir su premio</string>
+
+    <string-array name="lists">
+        <item>Item One</item>
+        <item>Item Two</item>
+        <item>Item Three</item>
+    </string-array>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <!--loadding -->
+    <string name="load_news">Cargando noticinas..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pay_pal_activirty">PayPalActivirty</string>
+
+    <!-- Title´s -->
+    <string name="title_home">Paises</string>
+    <string name="title_match">Partidos</string>
+    <string name="title_betting">Apuestas</string>
+
+
+    <!-- Internet -->
+    <string name="no_internet">tu dispositivo no cuenta con acceso a inernet</string>
+    <string name="reconnected_connection">Conexión restablecida</string>
+</resources>
